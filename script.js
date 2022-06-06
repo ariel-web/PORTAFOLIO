@@ -83,9 +83,7 @@ const observer = new IntersectionObserver((entries) => {
         const id = entry.target.getAttribute("id");
         const menuLink = document.querySelector(`.menu a[href="#${id}"]`)
         if (entry.isIntersecting) {
-                console.log("Estoy");
             menuLink.classList.add("selected");
-
         } else {
             menuLink.classList.remove("selected"); 
         }

@@ -97,7 +97,7 @@ section .title::after{
 }
 .navbar .logo a{
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
 }
 .navbar .logo a span{
@@ -106,9 +106,7 @@ section .title::after{
     transition: all 0.3s ease;
     font-weight: 700;
 }
-.navbar.sticky .logo a span{
-    color: #fff;
-}
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -289,19 +287,22 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    color: #ffbf00;
+    content: "Lo que ofresco";
 }
 .services .serv-content .card{
+    margin-top: 30px;
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
+    font-size: 14.5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: #ffbf00;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -311,17 +312,18 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: #ffbf00;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
     color: #fff;
 }
 .services .serv-content .card .text{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 
 /* skills section styling */
 
@@ -639,7 +641,9 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
+
     .services .serv-content .card{
+        margin-top: 0px;
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -664,6 +668,7 @@ footer span a:hover{
         font-size: 20px;
     }
     .services .serv-content .card{
+        margin-top: 0px;
         width: 100%;
     }
 }
