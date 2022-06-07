@@ -467,7 +467,8 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "get in touch";
+    content: "Comunicate";
+    color: #ffbf00
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -493,7 +494,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #ffbf00;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -552,13 +553,13 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
+  background: #ffbf00;
+  border: 2px solid #ffbf00;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: crimson;
-  background: none;
+  color: #ffbf00;
+  background: #111111;
 }
 /* footer section styling */
 footer{
