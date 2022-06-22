@@ -698,12 +698,12 @@ footer span a:hover{
     .tip{text-align: center;}
     .prin {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     .foto {
+        margin-top: 20px;
         width: 170px;
-        margin-bottom: -100px;
+        margin-bottom: -80px;
     }
     .ti {
         display: none;
