@@ -627,6 +627,8 @@ footer span a:hover{
         font-size: 1.7rem !important; 
     }
     .typing {
+        margin-top: -20px;
+        margin-bottom: 20px;
         font-size: 1.5rem !important;
     }
     .menu-btn i.active:before{
