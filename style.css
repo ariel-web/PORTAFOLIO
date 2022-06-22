@@ -576,6 +576,17 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+.nom{  font-weight: 500; }
+.ti{  font-size: 4rem !important; }
+.prin{   display: flex; }
+.foto{
+    width: 250px; 
+    border-radius:50%; 
+    border: 6px solid #000000; 
+    overflow:hidden; 
+    margin-top: 20px; 
+    margin-bottom: -80px;
+}
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -583,17 +594,40 @@ footer span a:hover{
         height: 350px;
         width: 350px;
     }
+    .foto {width: 220px;}
+    .ti {font-size: 3.5rem !important;}
 }
 
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
     }
+    .foto{
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: -90px;
+    }
+    .ti {font-size: 3.1rem !important;}
 }
 @media (max-width: 947px){
     .menu-btn{
         display: block;
         z-index: 999;
+    }
+
+    .foto {
+        width: 170px;
+        margin-bottom: -100px;
+    }
+    .ti {
+        font-size: 2.6rem !important;
+    }
+    .nom {
+        margin-top: 15px !important;
+        font-size: 1.7rem !important; 
+    }
+    .typing {
+        font-size: 1.5rem !important;
     }
     .menu-btn i.active:before{
         content: "\f00d";
@@ -660,6 +694,22 @@ footer span a:hover{
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
+    }
+    .tip{text-align: center;}
+    .prin {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foto {
+        width: 170px;
+        margin-bottom: -100px;
+    }
+    .ti {
+        display: none;
+    }
+    .nom {
+        display: none;
     }
     .home .home-content .text-2{
         font-size: 60px;
@@ -740,7 +790,7 @@ section[id] {
 
 ::selection{
     color: #fff;
-    background: #ff7979;
+    background: #ffbf00;
   }
   .wrapper{
     max-width: 1080px;
@@ -929,9 +979,8 @@ section[id] {
     margin-top: 5px;
 	height: 430px;
 	position: relative;
-	border-radius: 8px;
+	border-radius: 3px;
 	overflow: hidden;
-
 }
 
 .galeria .container-galeria:hover img{
@@ -1047,13 +1096,17 @@ section[id] {
 	margin-right: 4.5px;
 }
 
-.wrapper{
+.wrapper2{
   margin: 10px auto;
   max-width: 1100px;
+  min-width: 320px;
+  line-height: 3.5rem;
 }
-.wrapper nav{
+.wrapper2 nav{
   display: flex;
+  text-align: center;
   justify-content: center;
+  align-items: center;
 }
 .items span{
   margin: 0px  5px;
@@ -1105,7 +1158,7 @@ section[id] {
 }
 
 .details .icon{
-  color: #bffb00;
+  color: #ffbf00;
   font-style: 22px;
   cursor: pointer;
 }
