@@ -35,12 +35,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .contact, .skill footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
+.skill .skills-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -278,15 +279,17 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .teams, .contact{
     color:#fff;
     background: #111;
 }
 .services .title::before,
+.contact .title::before,
 .teams .title::before{
     background: #fff;
 }
 .services .title::after,
+.contact .title::after,
 .teams .title::after{
     background: #111;
     color: #ffbf00;
@@ -405,7 +408,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "Trabaje con";
+    content: "Trabajé con";
 }
 .teams .carousel .card{
     background: #222;
@@ -469,7 +472,8 @@ section .title::after{
 /* contact section styling */
 .contact .title::after{
     content: "Comunicate";
-    color: #ffbf00
+    color: #ffbf00;
+    background: #111;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -501,7 +505,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #898989e8;
 }
 .contact .right form .fields{
     display: flex;
@@ -562,9 +566,19 @@ section .title::after{
   color: #ffbf00;
   background: #111111;
 }
+
+/*Skill Secction */
+
+.skill .title::after{
+    content: "lo que ocupo";
+    color: #ffbf00;
+    background: #f9f9f9;
+}
+
+
 /* footer section styling */
 footer{
-    background: #111;
+    background: #222;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
@@ -712,7 +726,7 @@ footer span a:hover{
 
     .timeline ul li:nth-child(odd) {
         background: white;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+        box-shadow: #00000026 0px 3px 3px 0px;
         margin-bottom: 30px;
 
     }
@@ -1275,6 +1289,71 @@ section[id] {
   @media (max-width: 480px) {
     .gallery .image{
       width: calc(100% / 5);
+    }
+  }
+  
+
+
+  /***    CSS FOOTER *****/
+  .title-footer{
+    padding-top: 100px;
+    margin-top: 100px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem !important;
+  }
+  .tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: -10px;
+    margin-right: -10px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .tecnologias .image{
+    width: calc(100% / 10);
+    padding: 10px;
+
+  }
+  
+  .tecnologias .image img{
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 1200px) {
+    .tecnologias .image{
+      width: calc(100% / 9);
+    }
+  }
+  @media (max-width: 1000px) {
+    .tecnologias .image{
+      width: calc(100% / 7);
+    }
+  }
+  @media (max-width: 900px) {
+    .tecnologias .image{
+      width: calc(100% /6);
+    }
+  }
+  @media (max-width: 800px) {
+    .tecnologias .image{
+      width: calc(100% /5);
+    }
+  }
+  @media (max-width: 600px) {
+    .tecnologias .image{
+      width: calc(100% / 4);
+    }
+  }
+  @media (max-width: 480px) {
+    .tecnologias .image{
+      width: calc(100% / 3);
     }
   }
   
