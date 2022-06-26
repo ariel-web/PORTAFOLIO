@@ -405,7 +405,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "Trabaje con";
 }
 .teams .carousel .card{
     background: #222;
@@ -416,7 +416,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: crimson;
+    background: #ffbf00;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -429,16 +429,16 @@ section .title::after{
     transform: scale(1.05);
 }
 .teams .carousel .card .text{
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin: 20px 0 7px 0;
 }
 .teams .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid #ffbf00;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -454,7 +454,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #ffbf00 !important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -463,7 +463,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: #ffbf00 !important;
 }
 
 /* contact section styling */
@@ -570,7 +570,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: crimson;
+    color: #ffbf00;
     text-decoration: none;
 }
 footer span a:hover{
