@@ -578,12 +578,14 @@ section .title::after{
 
 /* footer section styling */
 footer{
+    font-family: poppins;
     background: #222;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
 }
 footer span a{
+    font-family: poppins;
     color: #ffbf00;
     text-decoration: none;
 }
