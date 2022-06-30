@@ -186,6 +186,7 @@ section .title::after{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
+    min-height: 700px;
     color: #fff;
     min-height: 500px;
     background-size: cover;
@@ -860,7 +861,13 @@ footer span a:hover{
     border: solid 4px #ffbf00;
 }
 
-
+.link-header{
+  height: 25px;
+  width: 25px;
+  margin: 0px !important;
+  padding: 0px !important;
+  background: none !important;
+}
 
 
 section[id] {
